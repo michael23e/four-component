@@ -1,0 +1,166 @@
+:root{
+--Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+--Very-Dark-Blue: hsl(234, 12%, 34%);
+--Grayish-Blue: hsl(229, 6%, 66%);
+--Very-Light-Gray: hsl(0, 0%, 98%);
+--White:#ffffff;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: var(--Very-Light-Gray);
+    min-height: 100vh;
+    padding: 0 15px;
+    margin: 0 auto;
+    font-family: "Poppins", sans-serif;
+}
+
+
+img{
+    display: block;
+    margin-left: auto;
+    padding: 10px;
+}
+.header{
+    padding: 30px 0;
+    text-align: center;
+}
+.header h2, .header p{
+    color: var(--Grayish-Blue);
+    padding: 5px 0;
+    width: 50%;
+    margin: auto;
+}
+.header h2{
+    font-weight: 500;
+}
+.header h1{
+    color: var(--Very-Dark-Blue);
+    padding: 5px 0;
+}
+
+.column-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card p{
+    color: var(--Grayish-Blue);
+    padding: 10px 0;
+    width: 90%;
+    font-size: 16px;
+}
+
+.col{
+    width: calc(94% / 3);
+}
+.col .card{
+    background-color: var(--White);
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px #ddd;
+}
+
+.cyan {
+    border-top: 5px solid var(--Cyan);
+}
+.red{
+    border-top: 5px solid var(--Red);
+    margin-bottom: 35px;
+}
+.yellow{
+    border-top: 5px solid var(--Orange);
+}
+.blue{
+    border-top: 5px solid var(--Blue);
+}
+.attribution{
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+}
+a {
+    text-decoration: none;
+    color: var(--Cyan);
+}
+
+@media (max-width:768px) {
+    .header p, .header h2, .header h1, .header{
+        width: 100%;
+    }
+    .header p{
+        font-size: 15px;
+    }
+
+    .column-container{
+        display: block;
+    }
+    .col{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .col div{
+        margin-bottom: 25px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:768px) {
+    body{
+        width: 750px;
+    }
+    
+}
+
+@media (min-width:992px) {
+    body{
+        width: 970px;
+    }
+    
+}
+
+@media (min-width:1200px) {
+    body{
+        width: 1170px;
+    }
+    
+}
+
+@media (min-width:2560px) {
+    body{
+        width: 2550px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .header h1, .header h2{
+        font-size: 80px;
+        width: 100%;
+    }
+    .header p{
+        font-size: 50px;
+    }
+    
+}
